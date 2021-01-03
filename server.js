@@ -18,6 +18,16 @@
 const fs = require('fs');
 const readline = require('readline');
 const {google} = require('googleapis');
+'use strict';
+
+
+// Constants
+const PORT = 8080;
+const HOST = '0.0.0.0';
+
+app.listen(PORT, HOST);
+console.log(`Running on http://${HOST}:${PORT}`);
+
 
 // If modifying these scopes, delete token.json.
 const SCOPES = ['https://www.googleapis.com/auth/script.projects'];
