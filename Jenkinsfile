@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage( 'build docker Image'){
             steps{
-                sh "docker build -t sdomguia/node-app:${DOCKER_TAG}"
+                sh "docker build . -t sdomguia/node-app:${DOCKER_TAG}"
             }
         }
     }
